@@ -1,0 +1,17 @@
+UPDATE movies SET times_viewed = 5 WHERE movie_id = 1;
+UPDATE movies SET times_viewed = 65 WHERE movie_id = 2;
+UPDATE movies SET times_viewed = 21 WHERE movie_id = 3;
+UPDATE movies SET times_viewed = 89 WHERE movie_id = 4;
+UPDATE movies SET times_viewed = 4 WHERE movie_id = 5;
+UPDATE movies SET times_viewed = 6 WHERE movie_id = 6;
+UPDATE movies SET times_viewed = 12 WHERE movie_id = 7;
+UPDATE movies SET times_viewed = 35 WHERE movie_id = 8;
+UPDATE movies SET times_viewed = 45 WHERE movie_id = 9;
+UPDATE movies SET times_viewed = 58 WHERE movie_id = 10;
+UPDATE movies SET times_viewed = 31 WHERE movie_id = 11;
+UPDATE movies SET times_viewed = 78 WHERE movie_id = 12;
+UPDATE movies SET times_viewed = 46 WHERE movie_id = 13;
+UPDATE movies SET times_viewed = 22 WHERE movie_id = 14;
+UPDATE movies SET times_viewed = 3 WHERE movie_id = 15;
+UPDATE movies SET times_viewed = 7 WHERE movie_id = 16;
+UPDATE movies SET times_viewed = 64 WHERE movie_id = 17;

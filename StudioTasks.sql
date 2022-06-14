@@ -1,0 +1,15 @@
+SELECT title FROM movies;
+SELECT title,year_released FROM movies ORDER BY year_released DESC;
+SELECT * FROM directors ORDER BY country ASC;
+SELECT * FROM directors ORDER BY country ASC, last_name ASC;
+INSERT INTO directors (first_name,last_name,country) VALUES ("Rob","Reiner","USA");
+SELECT last_name, director_id FROM directors WHERE last_name = "Reiner" AND first_name = "Rob";
+INSERT INTO movies (title,year_released,director_id) VALUES("The Princess Bride",1987,11);
+SELECT title,year_released,directors.last_name FROM movies INNER JOIN directors ON movies.director_id = directors.director_id;
+SELECT movies.*,directors.first_name,directors.last_name FROM movies LEFT JOIN directors ON movies.director_id = directors.director_id ORDER BY directors.last_name ASC;
+SELECT directors.first_name,directors.last_name FROM movies INNER JOIN directors ON movies.director_id = directors.director_id WHERE movies.title = "The Incredibles";
+SELECT last_name,country FROM directors INNER JOIN movies ON directors.director_id = movies.director_id AND movies.title = "Roma";
+SELECT * FROM movies;
+SELECT * FROM directors;
+DELETE FROM movies ORDER BY movie_id DESC LIMIT 1;
+DELETE FROM directors WHERE director_id = 1;
